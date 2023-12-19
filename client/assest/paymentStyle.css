@@ -1,0 +1,56 @@
+.container-box{
+    align-items: center;
+    width:100%;
+    
+}
+.container-box .steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.steps .circle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 500;
+    border: 4px solid #e0e0e0;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.steps .progress{
+    position: absolute;
+    height: 10px;
+    width: 70%;
+    background: #e0e0e0;
+    z-index: -1;
+}
+.progress .ligne {
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-color: #ef6817;
+}
+.container-box .descr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.descr .circle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    color: grey;
+    font-size: 20px;
+    font-weight: 300;
+}

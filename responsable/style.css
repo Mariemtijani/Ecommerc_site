@@ -1,0 +1,48 @@
+#ShowBrands{position: absolute;top:530px;left:180px;}
+#ShowCategory{position: absolute;top:530px;left:230px;}
+#ShowLivraisons{position: absolute;top:530px;left:230px;}
+#lisbrands,#lisCategory{display: none;}
+#hours ,#minutes,#seconds,#session,.dots,#cl{
+  color:black;
+  font-weight:bold;
+  padding-left:5px;
+  font-size:20px;
+}
+#cl{
+  align-items:center;
+}
+#clock{
+  background-color:#EB5E29;
+  display:flex;
+  justify-content:center;
+
+}
+
+      .logo{
+        width:200px;
+        height:50px;
+      }
+     
+      .btn{
+        background-color:#EB5E29;
+        
+        font-weight:bold;
+    }
+   
+          
+.fa-user{
+  font-size:20px;
+  margin-right:20px;
+}
+li a:hover{background-color:#EB5E29;}
+.dropdown-item:hover {
+  color:#EB5E29;
+  border-bottom: 1px solid #EB5E29}
+
+  #popup{
+    display: none;
+  }
+  .list-group-item a {text-decoration: none;color:black}
+  .list-group-item a:hover{background-color:white;}
+  
+  
