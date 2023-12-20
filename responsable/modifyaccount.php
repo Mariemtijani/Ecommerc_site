@@ -102,7 +102,7 @@ li a:hover{background-color:#EB5E29;}
 
     <?php
 
-$_SESSION['login']='s_hatmi@gmail.com';
+$_SESSION['login']='soma01@gmail.com';
     if (isset($_POST["ch"])) { 
         
         $re=$connexion->prepare("UPDATE responsable SET nom_responsable=?,prenom_responsable=?,adress=?,email=?,num_tele=? ");
@@ -114,8 +114,8 @@ if(!isset($_SESSION['login'])){
   header('location:logine.php');
 }
    $r=$connexion->prepare("SELECT * 
-   from responsable 
-   where email=?  ");
+   from responsable  
+   where email=?");
    $r->execute(array($_SESSION['login']));
    $d=date("h");
    if ($d<12) {
@@ -148,15 +148,15 @@ if (isset($_GET["msg"])) {?>
 <div class="d-flex justify-content-center container-fluid " style='margin-top:-50px;'>
     <div class="card col-8 " style="background-color: aliceblue; border-radius: 20px; margin-top: 70px;height: 500px;">
         <div class="nav justify-content-start" style="border-radius: 20px 20px 0px 0px; background-color: black;color:white">
-          <h3 class="d-flex flex-wrap align-content-center" style="margin-left: 30px;color: aliceblue; font-style: italic; height: 50px;"><?php echo  $bonjour ?><?php echo $l["nom_responsable"] ?> <?php echo $l["prenom_responsable"] ?>! <br></h4> 
-</h3>
+       <h3 class="d-flex flex-wrap align-content-center" style="margin-left: 30px;color: aliceblue; font-style: italic; height: 50px;"><?php echo  $bonjour ?><?php echo $l["nom_responsable"] ?> <?php echo $l["prenom_responsable"] ?>! <br></h4> 
+</h3> 
 </div>
         <div class="row" style="margin-left: 0.1px;">
             <div   style="border-radius: 0px px 0px 0px;background-color:black ;height:442px; width: 20.1%;"><br>
                   
                     <h5 id="nom" style="display: none;"><?php echo $l["nom_responsable"] ?> <?php echo $l["prenom_responsable"] ?></h5>
                     <span class="lin" style="background-color:; width: 100%"><a style="font-weight:bold"class='text-light' href="modifyaccount.php"  >Profile</a></span>
-                    <span class="lin" style="background-color:; width: 100%"><a style="font-weight:bold" class='text-light 'href="acceuiL.php">Home</a></span>
+                    <span class="lin" style="background-color:; width: 100%"><a style="font-weight:bold" class='text-light' href="accueiL.php">Home</a></span>
 
             </div>
             <div    style="background-color:;width: 78.4%;">
@@ -167,7 +167,7 @@ if (isset($_GET["msg"])) {?>
                 <h5>Address:</h5>
                 <p class='font-monospace'><?php echo $l["adress"]  ?></p>
                 <h5>Phone number:</h5>
-                <p class='font-monospace'><?php echo  $l["num_tele"] ?></p>
+                <p class='font-monospace'><?php echo  $l["nmr_tele"] ?></p>
                 <h5>Email:</h5>
                 <p class='font-monospace'><?php echo $l["email"] ?></p>
 	

@@ -112,14 +112,14 @@ setInterval(dt,10)
         <label for=""class='form-label mt-2 ms-5 '>Date :</label>
         <input type="date" class='form-control ms-5' name="DateBrand" id="">
         <label class='form-label ms-5 mt-2 '  for="">Description :</label>
-        <textarea class='form-control mb-3 ms-5' name="descriptionBrand" id="" cols="10" rows="5"></textarea>
+        <textarea class='form-control mb-3 ms-5 mt-1' name="descriptionBrand" id="" cols="10" rows="5"></textarea>
        
         <input type="submit" class="btn btn-dark ms-5 mb-5" value="Add brand">
     </div>
       </form>
    
 </div>
-<button class="btn btn-dark ms-5 mb-5" id='ShowBrands'>Show Brands</button>
+<button class="btn btn-dark ms-5 mb-5 mt-4" id='ShowBrands'>Show Brands</button>
 
 
 

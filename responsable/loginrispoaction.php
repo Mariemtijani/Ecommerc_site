@@ -2,7 +2,7 @@
 require("connexion.php");
 $r=$connexion->prepare("SELECT  COUNT(*) as c 
  FROM responsable
-  WHERE email = ? AND mot_passe LIKE ? ");
+  WHERE email = ? AND mot_pass LIKE ? ");
 $r->execute(array($_POST["emaile"],$_POST["passworde"]));
 $l=$r->fetch();
 if ($l["c"]==0) {

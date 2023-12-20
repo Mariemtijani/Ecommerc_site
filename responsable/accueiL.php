@@ -277,7 +277,7 @@ $requete->execute();?>
     <h4 class="card-title">Income <i class="fa-solid fa-arrow-trend-up "></i></h4>
     <?php   
 	
-    $Income=$connexion->prepare('SELECT sum(total * montant_total) as Income
+    $Income=$connexion->prepare('SELECT sum(total * montent_total) as Income
     from commande 
     where date_com between CONCAT(YEAR(current_date()), "-01-01") AND current_date()
     '
@@ -308,12 +308,13 @@ $requete->execute();?>
     ?>$</h5>
     
   </div>
+	
 
 
 </div>
 <div class="card col-3 ms-5 mt-5" >
   <div class="card-body">
-    <?php  $Income=$connexion->prepare('SELECT sum(total * montant_total) as Income
+    <?php  $Income=$connexion->prepare('SELECT sum(total * montent_total) as Income
      from commande 
      where date_com between CONCAT(YEAR(current_date()), "-01-01") AND current_date()
      '

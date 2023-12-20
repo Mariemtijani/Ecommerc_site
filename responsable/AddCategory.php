@@ -112,13 +112,13 @@ setInterval(dt,10)
         <input type="date" class='form-control ms-5' name="DateCategorie" id="">
         <label class='form-label mt-2 ms-5' for="">Description :</label>
         <textarea class='form-control mb-3 ms-5' name="descriptionCategorie" id="" cols="10" rows="5"></textarea>
-        <input type="submit" class="btn btn-dark ms-5 mb-5" value="Add Categorie">
+        <input type="submit" class="btn btn-dark ms-5 mb-5 mt-1" value="Add Categorie">
    
       </form>
      
    
     </div>
-    <button class="btn btn-dark ms-5 mb-5" id='ShowCategory'>Show Category</button>
+    <button class="btn btn-dark ms-5 mb-5 mt-4" id='ShowCategory'>Show Category</button>
     <!-- ------------------ alert  ----------------- -->
     <?php if(isset($_GET['msgok'])||isset($_GET['msgerror'])){?>
 <div <?php if(isset($_GET['msgok'])){echo  'class="alert alert-success alert-dismissible fade show"';}
